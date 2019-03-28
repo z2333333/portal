@@ -1,4 +1,4 @@
-package com.zx.portal.service;
+package dubbo.service;
 
 public interface IUserService {
 

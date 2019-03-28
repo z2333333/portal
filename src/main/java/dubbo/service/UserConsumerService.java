@@ -1,4 +1,4 @@
-package com.zx.portal.service;
+package dubbo.service;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import org.springframework.stereotype.Component;
