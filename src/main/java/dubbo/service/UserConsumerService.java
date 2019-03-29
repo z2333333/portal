@@ -9,7 +9,8 @@ public class UserConsumerService {
 
     public String localVar = "11";
 
-    @Reference(version = "1.0.0")
+//    @Reference(version = "1.0.0")
+    @Reference
     IUserService iUserService;
 
     public void test(){
