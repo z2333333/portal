@@ -9,7 +9,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @EnableDubboConfiguration
-@ComponentScan(basePackages = {"dubbo.service"})
+@ComponentScan(basePackages = {"dubbo.service","com.zx.portal"})
 public class PortalApplication {
 
     public static void main(String[] args) {
@@ -17,6 +17,9 @@ public class PortalApplication {
 
         UserConsumerService userConsumerService = run.getBean(UserConsumerService.class);
         userConsumerService.test();
+
+//        UserConsumerService userConsumerService1 = SpringUtil.getBean(UserConsumerService.class);
+//        userConsumerService1.login("admin","admin");
     }
 
 }
